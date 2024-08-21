@@ -41,7 +41,7 @@ def main():
             for shot in shots:
                 if asteroid.isColliding(shot):
                     shot.kill()
-                    asteroid.kill()
+                    asteroid.split()
         for obj in drawable:
             # uncomment to draw hitboxes
             # obj.draw_circle(screen)
